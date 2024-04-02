@@ -7,9 +7,31 @@
       <app-product></app-product>
       <!-- <app-product></app-product> -->
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let skill of skills">I love{{skill}}</li>698/  
+        <li class="list-group-item" *ngFor="let skill of skills">I love{{skill}}</li> 
         
       </ul>
+
+      <hr>
+      <div class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>First Name</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of stdArr; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{student.fname}}</td>
+            <td>{{student.lname}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.contact}}</td>
+          </tr>
+        </tbody>
+      </div>
     </div>
   </div>
 </div>
